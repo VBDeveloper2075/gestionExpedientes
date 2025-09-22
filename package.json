@@ -1,0 +1,55 @@
+{
+  "name": "jpverito-fullstack",
+  "version": "1.0.0",
+  "description": "Sistema de Gestión Educativa - JP Verito",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:client && npm run build:server",
+    "client": "cd cliente && npm start",
+    "server": "cd servidor && node server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "init-db": "cd servidor && node config/initDB.js",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "docker:reset": "docker-compose down -v && docker-compose up -d",
+    "dev:database": "docker-compose up -d mysql phpmyadmin",
+    "dev:full": "concurrently \"npm run dev:database\" \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd servidor && npm run dev",
+    "dev:client": "cd cliente && npm start",
+    "build:client": "cd cliente && npm run build",
+    "build:server": "cd servidor && npm run build",
+    "build:portable": "cd portable && npm run build",
+    "test:all": "concurrently \"cd cliente && npm test\" \"cd servidor && npm test\"",
+    "setup:env": "copy .env.development .env",
+    "setup:dev": "npm run setup:env && npm run install:all && npm run docker:up",
+    "install:all": "npm install && cd cliente && npm install && cd ../servidor && npm install && cd ../portable && npm install",
+    "clean": "rmdir /s /q node_modules cliente\\node_modules servidor\\node_modules portable\\node_modules",
+    "health": "curl -f http://localhost:5000/api/health || exit 1",
+    "docker:build": "docker build -t jpverito:latest .",
+    "docker:run:hostdb": "docker run --rm -p 8080:8080 -e DB_HOST=host.docker.internal -e DB_PORT=3306 -e DB_NAME=jp3_db -e DB_USER=root -e DB_PASSWORD= -e JWT_SECRET=jp3verito2025secretkey --name jpverito jpverito:latest"
+  },
+  "keywords": [
+    "education",
+    "management",
+    "fullstack",
+    "react",
+    "node",
+    "mysql",
+    "expedientes",
+    "disposiciones",
+    "gestión"
+  ],
+  "author": "JP Verito Team",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.6.1",
+    "mysql2": "^3.15.0",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

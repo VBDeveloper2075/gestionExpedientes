@@ -1,0 +1,149 @@
+{
+  "name": "jp3-database-diagram",
+  "version": "1.0.0",
+  "description": "Diagrama entidad-relación de la base de datos JP3",
+  "entities": [
+    {
+      "name": "docentes",
+      "fields": [
+        {"name": "id", "type": "INT", "primary": true, "auto_increment": true},
+        {"name": "nombre", "type": "VARCHAR(100)", "nullable": false},
+        {"name": "apellido", "type": "VARCHAR(100)", "nullable": false},
+        {"name": "dni", "type": "VARCHAR(20)", "nullable": false},
+        {"name": "email", "type": "VARCHAR(100)", "nullable": true},
+        {"name": "telefono", "type": "VARCHAR(50)", "nullable": true},
+        {"name": "fecha_creacion", "type": "DATETIME", "nullable": false, "default": "CURRENT_TIMESTAMP"}
+      ],
+      "indexes": [
+        {"name": "idx_docentes_dni", "fields": ["dni"]}
+      ]
+    },
+    {
+      "name": "escuelas",
+      "fields": [
+        {"name": "id", "type": "INT", "primary": true, "auto_increment": true},
+        {"name": "nombre", "type": "VARCHAR(100)", "nullable": false},
+        {"name": "direccion", "type": "VARCHAR(200)", "nullable": true},
+        {"name": "telefono", "type": "VARCHAR(50)", "nullable": true},
+        {"name": "email", "type": "VARCHAR(100)", "nullable": true},
+        {"name": "fecha_creacion", "type": "DATETIME", "nullable": false, "default": "CURRENT_TIMESTAMP"}
+      ]
+    },
+    {
+      "name": "expedientes",
+      "fields": [
+        {"name": "id", "type": "INT", "primary": true, "auto_increment": true},
+        {"name": "numero", "type": "VARCHAR(50)", "nullable": false},
+        {"name": "asunto", "type": "TEXT", "nullable": false},
+        {"name": "fecha_recibido", "type": "DATE", "nullable": false},
+        {"name": "notificacion", "type": "TEXT", "nullable": true},
+        {"name": "resolucion", "type": "TEXT", "nullable": true},
+        {"name": "pase", "type": "TEXT", "nullable": true},
+        {"name": "observaciones", "type": "TEXT", "nullable": true},
+        {"name": "estado", "type": "VARCHAR(50)", "nullable": false, "default": "pendiente"},
+        {"name": "docente_id", "type": "INT", "nullable": true, "references": {"entity": "docentes", "field": "id"}},
+        {"name": "escuela_id", "type": "INT", "nullable": true, "references": {"entity": "escuelas", "field": "id"}},
+        {"name": "fecha_creacion", "type": "DATETIME", "nullable": false, "default": "CURRENT_TIMESTAMP"},
+        {"name": "fecha_inicio", "type": "DATE", "nullable": true}
+      ],
+      "indexes": [
+        {"name": "idx_expedientes_numero", "fields": ["numero"]},
+        {"name": "idx_expedientes_estado", "fields": ["estado"]}
+      ]
+    },
+    {
+      "name": "disposiciones",
+      "fields": [
+        {"name": "id", "type": "INT", "primary": true, "auto_increment": true},
+        {"name": "numero", "type": "VARCHAR(50)", "nullable": false},
+        {"name": "fecha_dispo", "type": "DATE", "nullable": false},
+        {"name": "dispo", "type": "TEXT", "nullable": false},
+        {"name": "docente_id", "type": "INT", "nullable": true, "references": {"entity": "docentes", "field": "id"}},
+        {"name": "cargo", "type": "VARCHAR(100)", "nullable": true},
+        {"name": "motivo", "type": "TEXT", "nullable": true},
+        {"name": "enlace", "type": "VARCHAR(255)", "nullable": true},
+        {"name": "fecha_creacion", "type": "DATETIME", "nullable": false, "default": "CURRENT_TIMESTAMP"}
+      ],
+      "indexes": [
+        {"name": "idx_disposiciones_numero", "fields": ["numero"]}
+      ]
+    },
+    {
+      "name": "expedientes_docentes",
+      "fields": [
+        {"name": "id", "type": "INT", "primary": true, "auto_increment": true},
+        {"name": "expediente_id", "type": "INT", "nullable": false, "references": {"entity": "expedientes", "field": "id"}},
+        {"name": "docente_id", "type": "INT", "nullable": false, "references": {"entity": "docentes", "field": "id"}}
+      ],
+      "constraints": [
+        {"name": "unique_expediente_docente", "type": "UNIQUE", "fields": ["expediente_id", "docente_id"]}
+      ]
+    },
+    {
+      "name": "expedientes_escuelas",
+      "fields": [
+        {"name": "id", "type": "INT", "primary": true, "auto_increment": true},
+        {"name": "expediente_id", "type": "INT", "nullable": false, "references": {"entity": "expedientes", "field": "id"}},
+        {"name": "escuela_id", "type": "INT", "nullable": false, "references": {"entity": "escuelas", "field": "id"}}
+      ],
+      "constraints": [
+        {"name": "unique_expediente_escuela", "type": "UNIQUE", "fields": ["expediente_id", "escuela_id"]}
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "name": "fk_expedientes_docentes",
+      "type": "many-to-one",
+      "from": {"entity": "expedientes", "field": "docente_id"},
+      "to": {"entity": "docentes", "field": "id"},
+      "onDelete": "SET NULL"
+    },
+    {
+      "name": "fk_expedientes_escuelas",
+      "type": "many-to-one",
+      "from": {"entity": "expedientes", "field": "escuela_id"},
+      "to": {"entity": "escuelas", "field": "id"},
+      "onDelete": "SET NULL"
+    },
+    {
+      "name": "fk_disposiciones_docentes",
+      "type": "many-to-one",
+      "from": {"entity": "disposiciones", "field": "docente_id"},
+      "to": {"entity": "docentes", "field": "id"},
+      "onDelete": "SET NULL"
+    },
+    {
+      "name": "fk_expedientes_docentes_mm_expedientes",
+      "type": "many-to-many",
+      "through": "expedientes_docentes",
+      "from": {"entity": "expedientes_docentes", "field": "expediente_id"},
+      "to": {"entity": "expedientes", "field": "id"},
+      "onDelete": "CASCADE"
+    },
+    {
+      "name": "fk_expedientes_docentes_mm_docentes",
+      "type": "many-to-many",
+      "through": "expedientes_docentes",
+      "from": {"entity": "expedientes_docentes", "field": "docente_id"},
+      "to": {"entity": "docentes", "field": "id"},
+      "onDelete": "CASCADE"
+    },
+    {
+      "name": "fk_expedientes_escuelas_mm_expedientes",
+      "type": "many-to-many",
+      "through": "expedientes_escuelas",
+      "from": {"entity": "expedientes_escuelas", "field": "expediente_id"},
+      "to": {"entity": "expedientes", "field": "id"},
+      "onDelete": "CASCADE"
+    },
+    {
+      "name": "fk_expedientes_escuelas_mm_escuelas",
+      "type": "many-to-many",
+      "through": "expedientes_escuelas",
+      "from": {"entity": "expedientes_escuelas", "field": "escuela_id"},
+      "to": {"entity": "escuelas", "field": "id"},
+      "onDelete": "CASCADE"
+    }
+  ]
+}

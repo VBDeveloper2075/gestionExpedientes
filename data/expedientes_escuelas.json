@@ -1,0 +1,92 @@
+[
+  {
+    "expediente_id": "00665f32-cbea-4bc4-826a-184a72099b08",
+    "escuela_id": "d67746dd-168f-4b5a-9f6d-0ded576a51de",
+    "created_at": "2025-09-20T20:51:09.708Z",
+    "updated_at": "2025-09-20T20:51:09.708Z"
+  },
+  {
+    "expediente_id": "24eb37dc-f86a-40d3-a695-0693d5612c03",
+    "escuela_id": "7418fa21-05af-4454-98fe-1111d9f2f125",
+    "created_at": "2025-09-20T20:51:09.708Z",
+    "updated_at": "2025-09-20T20:51:09.708Z"
+  },
+  {
+    "expediente_id": "ffb9f91c-149a-47a3-996e-ce3a83d6f4a0",
+    "escuela_id": "1c6d34fa-803c-460a-a5b3-6ed30c08f2a3",
+    "created_at": "2025-09-20T20:51:09.708Z",
+    "updated_at": "2025-09-20T20:51:09.708Z"
+  },
+  {
+    "expediente_id": "d827f3ed-061f-460e-b195-16e23fcb40eb",
+    "escuela_id": "a0008a43-2e1d-4c0c-89b2-61fb2414ded6",
+    "created_at": "2025-09-20T20:51:09.708Z",
+    "updated_at": "2025-09-20T20:51:09.708Z"
+  },
+  {
+    "expediente_id": "744f70b0-9638-425e-92eb-d7385b3600f3",
+    "escuela_id": "fe8f7149-0a5b-4eb4-9f9f-bbf48b50daac",
+    "created_at": "2025-09-20T20:51:09.708Z",
+    "updated_at": "2025-09-20T20:51:09.708Z"
+  },
+  {
+    "expediente_id": "1727e049-05e4-4a2b-af64-4c17078be0f2",
+    "escuela_id": "49a3dde6-3161-45b4-99cb-16780cad388b",
+    "created_at": "2025-09-20T20:51:09.708Z",
+    "updated_at": "2025-09-20T20:51:09.708Z"
+  },
+  {
+    "expediente_id": "10c93bf8-09b2-49cf-a8a2-fa80a6ad5b30",
+    "escuela_id": "49a3dde6-3161-45b4-99cb-16780cad388b",
+    "created_at": "2025-09-20T20:51:09.708Z",
+    "updated_at": "2025-09-20T20:51:09.708Z"
+  },
+  {
+    "expediente_id": "2fb4a778-2679-497f-ae89-637ec1d021ce",
+    "escuela_id": "6ddb2b15-05f0-4ff1-91bb-ca8bb08da23e",
+    "created_at": "2025-09-20T20:51:09.708Z",
+    "updated_at": "2025-09-20T20:51:09.708Z"
+  },
+  {
+    "expediente_id": "99a96362-50fc-4d3f-9ce0-d32d90dfbb2d",
+    "escuela_id": "a04fda0a-93a0-40bd-a05f-561003599dc9",
+    "created_at": "2025-09-20T20:51:09.708Z",
+    "updated_at": "2025-09-20T20:51:09.708Z"
+  },
+  {
+    "expediente_id": "1b8bed7f-24c5-41ed-b40d-023040eed9bc",
+    "escuela_id": "3203ce31-aac2-4995-bda7-37bbf4872171",
+    "created_at": "2025-09-20T20:51:09.708Z",
+    "updated_at": "2025-09-20T20:51:09.708Z"
+  },
+  {
+    "expediente_id": "154a9dd5-326b-4fe4-85b3-2d4b7c305657",
+    "escuela_id": "847ff3a5-818b-4126-a372-6a174b071991",
+    "created_at": "2025-09-20T20:51:09.708Z",
+    "updated_at": "2025-09-20T20:51:09.708Z"
+  },
+  {
+    "expediente_id": "5df03c37-236c-44ec-9e4b-0366f70ed1ce",
+    "escuela_id": "51bb9184-4354-4846-9b60-b5e363eb5d0e",
+    "created_at": "2025-09-20T20:51:09.708Z",
+    "updated_at": "2025-09-20T20:51:09.708Z"
+  },
+  {
+    "expediente_id": "5f8ab6c6-c2ec-4a81-a9c7-5e278caa479f",
+    "escuela_id": "eb0ce47a-1162-455f-82ae-cc71fc80f698",
+    "created_at": "2025-09-20T20:51:09.708Z",
+    "updated_at": "2025-09-20T20:51:09.708Z"
+  },
+  {
+    "expediente_id": "9e21275d-be1b-4d72-905e-6d00aabfef7a",
+    "escuela_id": "94c42725-b128-4ddb-a8ee-304457be2b39",
+    "created_at": "2025-09-20T20:51:09.708Z",
+    "updated_at": "2025-09-20T20:51:09.708Z"
+  },
+  {
+    "expediente_id": "fd6cffc6-74e0-4580-be35-fe67ec77794d",
+    "escuela_id": "94c42725-b128-4ddb-a8ee-304457be2b39",
+    "created_at": "2025-09-20T20:51:09.708Z",
+    "updated_at": "2025-09-20T20:51:09.708Z"
+  }
+]

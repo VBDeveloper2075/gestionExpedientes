@@ -1,0 +1,33 @@
+.disposicion-detail .card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: none;
+}
+
+.disposicion-detail .card-body {
+  padding: 2rem;
+}
+
+.disposicion-detail h5.text-muted {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.white-space-pre-wrap {
+  white-space: pre-wrap;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.link-primary {
+  text-decoration: none;
+}
+
+.link-primary:hover {
+  text-decoration: underline;
+}

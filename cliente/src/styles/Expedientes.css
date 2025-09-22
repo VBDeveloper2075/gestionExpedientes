@@ -1,0 +1,64 @@
+/* Estilos para expedientes */
+
+/* Estilos para las listas de docentes y escuelas en los expedientes */
+.expedientes-list .docentes-list, .expedientes-list .escuelas-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  max-width: 200px;
+}
+
+.expedientes-list .docentes-list .badge, .expedientes-list .escuelas-list .badge {
+  font-size: 0.80rem;
+  font-weight: normal;
+  padding: 5px 8px;
+  border: 1px solid #dee2e6;
+  white-space: normal;
+  text-align: left;
+}
+
+/* Estilos para las tablas de listas */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para componentes de React Select */
+.react-select-container {
+  font-size: 0.9rem;
+}
+
+.react-select__control {
+  min-height: 38px;
+  border-color: #ced4da;
+}
+
+.react-select__control:hover {
+  border-color: #adb5bd;
+}
+
+.react-select__control--is-focused {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  border-color: #86b7fe;
+}
+
+.react-select__menu {
+  z-index: 100;
+}
+
+.react-select__option--is-selected {
+  background-color: #0d6efd;
+}
+
+.react-select__multi-value {
+  background-color: #e7f3ff;
+}
+
+.react-select__multi-value__label {
+  font-size: 85%;
+}

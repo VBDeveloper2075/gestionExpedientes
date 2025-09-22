@@ -1,0 +1,90 @@
+/* Estilos para docentes y escuelas */
+
+/* Estilos generales para las listas */
+.docentes-list, .escuelas-list {
+  width: 100%;
+}
+
+/* Estilos para las tablas */
+.docentes-list .table-responsive, .escuelas-list .table-responsive {
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.docentes-list .table, .escuelas-list .table {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* Estilos para los botones de acción */
+.action-buttons {
+  white-space: nowrap;
+  width: 1%;
+}
+
+/* Estilos para los formularios */
+.form-container {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  padding: 1.5rem;
+}
+
+.form-header {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 1rem;
+}
+
+/* Estilo para campos requeridos */
+.required-field::after {
+  content: " *";
+  color: #dc3545;
+}
+
+/* Estilos para el componente de detalle */
+.docente-nombre, .escuela-nombre {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  padding-right: 8px;
+}
+
+/* Estilos para listas en cards */
+.docentes-asociados-list .list-group-item, 
+.escuelas-asociadas-list .list-group-item {
+  padding: 0.5rem 1rem;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+  .table-responsive {
+    border: 0;
+  }
+  
+  .table-responsive table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+  
+  .table-responsive th {
+    text-align: left;
+  }
+  
+  .docentes-list .card-body, .escuelas-list .card-body {
+    padding: 1rem;
+  }
+  
+  /* Ajustes para pantallas pequeñas */
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .col-md-6 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,116 @@
+[
+  {
+    "expediente_id": "b0400eb0-2606-469a-9a73-90a950631228",
+    "docente_id": "fce60e01-60b3-46cf-9f4e-3fd2e5195042",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  },
+  {
+    "expediente_id": "00665f32-cbea-4bc4-826a-184a72099b08",
+    "docente_id": "716d8d66-9fe1-4a11-b068-e61aa0d75d2e",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  },
+  {
+    "expediente_id": "24eb37dc-f86a-40d3-a695-0693d5612c03",
+    "docente_id": "d8648f61-d84e-4514-a31f-f3c2db840f6f",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  },
+  {
+    "expediente_id": "184a313c-1d9a-4388-8014-59d3ab619180",
+    "docente_id": "68cf2e49-535d-4c23-ab66-67b95d4feb97",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  },
+  {
+    "expediente_id": "ffb9f91c-149a-47a3-996e-ce3a83d6f4a0",
+    "docente_id": "92c0f649-95e2-4b63-b9e8-23502a318eaf",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  },
+  {
+    "expediente_id": "d827f3ed-061f-460e-b195-16e23fcb40eb",
+    "docente_id": "bee92f36-f690-4d55-b185-f9eee9a74fac",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  },
+  {
+    "expediente_id": "744f70b0-9638-425e-92eb-d7385b3600f3",
+    "docente_id": "0beef879-a2b1-421b-a1a4-560a6d2b6320",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  },
+  {
+    "expediente_id": "1727e049-05e4-4a2b-af64-4c17078be0f2",
+    "docente_id": "4851160b-0379-4a7f-ba03-90ba3d9e4fd4",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  },
+  {
+    "expediente_id": "1727e049-05e4-4a2b-af64-4c17078be0f2",
+    "docente_id": "c0351fab-235a-4ceb-8f6b-f5855947eaeb",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  },
+  {
+    "expediente_id": "10c93bf8-09b2-49cf-a8a2-fa80a6ad5b30",
+    "docente_id": "62cd8a50-0da4-4a7e-8d80-c5d8f551ec35",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  },
+  {
+    "expediente_id": "2fb4a778-2679-497f-ae89-637ec1d021ce",
+    "docente_id": "db636ff3-4c17-4381-b845-a192acbe09bc",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  },
+  {
+    "expediente_id": "99a96362-50fc-4d3f-9ce0-d32d90dfbb2d",
+    "docente_id": "4384c5e6-2a11-4756-95e3-b145b241f2d9",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  },
+  {
+    "expediente_id": "1b8bed7f-24c5-41ed-b40d-023040eed9bc",
+    "docente_id": "235fe756-5f6e-49c8-b2b3-6adc6bfb96af",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  },
+  {
+    "expediente_id": "154a9dd5-326b-4fe4-85b3-2d4b7c305657",
+    "docente_id": "36ab2c31-c2e7-4e99-ab5b-8df97846eea2",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  },
+  {
+    "expediente_id": "7abb87d9-b5fd-4f8f-9208-7360433487e5",
+    "docente_id": "1b58b9e4-fa4f-4ee8-97eb-3bced47ad875",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  },
+  {
+    "expediente_id": "7ef9845a-6292-4d0f-9e9e-f6c091e45d90",
+    "docente_id": "380e5b72-6c77-4421-8f57-8ad91387d40b",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  },
+  {
+    "expediente_id": "5df03c37-236c-44ec-9e4b-0366f70ed1ce",
+    "docente_id": "fa0ac33c-6fb3-477c-b1a1-eb4941eb0d10",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  },
+  {
+    "expediente_id": "fb8307b4-0b74-43f3-890b-47d34acbc0aa",
+    "docente_id": "65125634-b673-4634-abe2-ff3583c4d523",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  },
+  {
+    "expediente_id": "5f8ab6c6-c2ec-4a81-a9c7-5e278caa479f",
+    "docente_id": "f7d61050-d7d0-4841-a5cb-54ea471bc0aa",
+    "created_at": "2025-09-20T20:51:09.701Z",
+    "updated_at": "2025-09-20T20:51:09.701Z"
+  }
+]
